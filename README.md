@@ -14,12 +14,12 @@
 
 ### 前置条件
 1. 拥有已绑定活跃计费账户（信用卡）的 Google Cloud Platform 账号。
-2. 在 GCP 控制台中已选中一个活跃的项目 (Project)。
+2. 在 GCP 中已拥有至少一个活跃的项目 (Project)。
 
 ### 部署步骤
-1. 访问 [Google Cloud Console](https://console.cloud.google.com/)。
-2. 点击右上角导航栏的 `>_` 图标打开 **Cloud Shell**。
-3. 当底部的 Cloud Shell 终端准备就绪后，复制并执行以下命令：
+1. 打开浏览器，直接访问并登录 **[Google Cloud Shell](https://shell.cloud.google.com/)**。
+2. 等待网页底部的终端实例初始化完成。
+3. 当终端准备就绪后，复制并执行以下命令：
 
 ```bash
 bash <(curl -sL https://raw.githubusercontent.com/gitreposcripts/gcp-xray/main/install.sh)
