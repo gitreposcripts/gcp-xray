@@ -13,7 +13,7 @@ echo "  3) 🇭🇰 香港 (asia-east2-a)        - 约 \$7.0 ~ \$8.0 / 月"
 echo "  4) 🇯🇵 日本 (asia-northeast1-b)   - 约 \$6.5 ~ \$7.0 / 月"
 echo "  5) 🇺🇸 美国 (us-west1-b)          - 包含在 GCP 永久免费额度内 (0\$)"
 echo "--------------------------------------------------"
-read -p "请输入数字 [默认 1]: " REGION_CHOICE
+read -p "请输入数字 [默认 1]: " REGION_CHOICE < /dev/tty || REGION_CHOICE="1"
 
 case "$REGION_CHOICE" in
     2) ZONE="asia-southeast1-b"; PREFIX="SG" ;;
