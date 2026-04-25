@@ -7,18 +7,18 @@ echo "=================================================="
 echo "🚀 欢迎使用 GCP Reality 节点全自动部署向导"
 echo "=================================================="
 echo "请选择服务器物理位置 (机型: e2-micro, 10G 硬盘):"
-echo "  1) 🇹🇼 台湾 (asia-east1-b)      - 约 \$6.5 ~ \$7.0 / 月"
-echo "  2) 🇭🇰 香港 (asia-east2-a)      - 约 \$7.0 ~ \$8.0 / 月"
-echo "  3) 🇯🇵 日本 (asia-northeast1-b) - 约 \$6.5 ~ \$7.0 / 月"
-echo "  4) 🇰🇷 韩国 (asia-northeast3-a) - 约 \$6.5 ~ \$7.0 / 月"
-echo "  5) 🇺🇸 美国 (us-west1-b)        - 包含在 GCP 永久免费额度内 (0\$)"
+echo "  1) 🇹🇼 台湾 (asia-east1-b)        - 约 \$6.5 ~ \$7.0 / 月"
+echo "  2) 🇸🇬 新加坡 (asia-southeast1-b) - 约 \$6.5 ~ \$7.0 / 月"
+echo "  3) 🇭🇰 香港 (asia-east2-a)        - 约 \$7.0 ~ \$8.0 / 月"
+echo "  4) 🇯🇵 日本 (asia-northeast1-b)   - 约 \$6.5 ~ \$7.0 / 月"
+echo "  5) 🇺🇸 美国 (us-west1-b)          - 包含在 GCP 永久免费额度内 (0\$)"
 echo "--------------------------------------------------"
 read -p "请输入数字 [默认 1]: " REGION_CHOICE
 
 case "$REGION_CHOICE" in
-    2) ZONE="asia-east2-a"; PREFIX="HK" ;;
-    3) ZONE="asia-northeast1-b"; PREFIX="JP" ;;
-    4) ZONE="asia-northeast3-a"; PREFIX="KR" ;;
+    2) ZONE="asia-southeast1-b"; PREFIX="SG" ;;
+    3) ZONE="asia-east2-a"; PREFIX="HK" ;;
+    4) ZONE="asia-northeast1-b"; PREFIX="JP" ;;
     5) ZONE="us-west1-b"; PREFIX="US" ;;
     *) ZONE="asia-east1-b"; PREFIX="TW" ;;
 esac
